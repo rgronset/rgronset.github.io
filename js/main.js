@@ -41,6 +41,9 @@ function askQuestions() {
 // Når siden har lastet
 $(function() {
 
+	// When the user clicks the image, run askQuestions
+	$('img').on('click', askQuestions);
+
 	// Når bruker klikker et h3 element
 	$('h3').on('click', function() {
 
